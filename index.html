@@ -1,15 +1,34 @@
 <html>
 <head>
     <title> Dibujo  </title>
+    <style>       
+    body{
+        background-image: url(./fondo.jpg);
+        background-size: 100%;
+    }
+    canvas{
+        background-color: white;
+        border: 2px solid black;
+        
+    }
+
+    .cuadro{
+        text-align: center;
+        color: white;
+    }
+    
+    </style>
 </head>
 <body>
-    <h1>   Crea lineas   </h1>
-    <p> Escoje el numero de lineas
+<div class="cuadro">
+    <h1>   CREADOR DE LINEAS   </h1>
+    <p> Poner un numero del 1-500
         <input type="text" name="" id="texto_text">
     <input type="button" value="A DARLE" id="botoncito"></p>
     <p>Elige el color <input type="color" name="" id="colorcito"></p>
 
     <canvas width="300" height="300" id="papel"></canvas>
+</div>
     <script src="codigojava.js">
     </script>
 </body>
